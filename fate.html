@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <style>
+      html{
+          background-image: url(../背景图/cool-background.png);
+      }
+        .cube{
+            width: 200px;
+            height: 200px;
+            /* background-color: blueviolet; */
+            margin: 100px auto;
+            /* perspective: 500px; */
+            
+            transform-style: preserve-3d;
+            /* transform: rotateX(125deg) rotateZ(25deg) ;  */
+            animation: move 20s linear infinite;
+            /* transform: rotateY(-90deg); */
+        }
+        @keyframes move {
+            from {
+                transform: rotateX(0deg) rotateZ(0deg)   ;
+            }
+            to{
+                transform: rotateX(360deg) rotateZ(360deg)   ;
+            }
+        }
+        .cube>li{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        img{
+            vertical-align: top;
+            
+            opacity: 0.7;
+        }
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box3{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box4{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box5{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .box6{
+            transform: rotateY(0deg) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <li class="box1"><img src="../背景图/src=http _img.duoziwang.com_uploads_c160225_14563O001U0-45148.jpg&refer=http _img.duoziwang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto.webp"></li>
+        <li class="box2"><img src="../背景图/u=1226112146,1555233050&fm=253&fmt=auto.webp"></li>
+        <li class="box3"><img src="../背景图/u=3143244811,2647200593&fm=253&fmt=auto.webp"></li>
+        <li class="box4"><img src="../背景图/u=3334731847,739049039&fm=253&fmt=auto.webp"></li>
+        <li class="box5"><img src="../背景图/u=3463075308,2631999428&fm=253&fmt=auto.webp"></li>
+        <li class="box6"><img src="../背景图/u=576195435,560980948&fm=253&fmt=auto.webp"></li>
+    </div>
+</body>
+</html>
